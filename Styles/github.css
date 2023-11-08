@@ -1,0 +1,55 @@
+.github__main {
+    background: #000000;
+    background: -webkit-linear-gradient(to left, #434343, #000000); 
+    background: linear-gradient(to left, #434343, #000000); 
+    padding: 10rem 0;
+  }
+
+  .github__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 1000px;
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+  
+  .github__content {
+    display: grid;
+    grid-row: 1;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .github__content h2 {
+    font-size: 4rem;
+    color: #fff;
+    background: rgb(115,200,169);
+    background: linear-gradient(90deg, #73c8a9 0%, rgba(0,115,98,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+  }
+
+  .github__btn {
+    font-size: 1.8rem;
+    background: rgb(115,200,169);
+    background: linear-gradient(90deg, rgba(115,200,169,1) 0%, rgba(0,115,98,1) 100%);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
