@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/about.css" />
+    <link rel="stylesheet" href="Styles/projects.css" />
+    <link rel="stylesheet" href="Styles/contact.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+
+  </head>
+  <body class="projects__page">
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">RHYS KOUTTS</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#contact" class="button" id="contact-page">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"><span>ASTAR</span> Pathfinding Project</h1>
+        <img class="image" src="Images/AiScreeenshot.png">
+      </div>
+    </div>
+
+    <!-- Astar Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card">ICON</div>
+        </div>
+        <div class="main__content">
+          <h2>Astar Algorithm</h2>
+          <p>
+            At the heart of my project is the A* pathfinding algorithm. A* is a
+            renowned algorithm used to find the shortest path between two points
+            in a grid or graph. In my implementation, I not only utilized A* but
+            also optimized and tailored it to the specific requirements of my
+            simulation. This efficient pathfinding algorithm played a crucial
+            role in guiding AI agents through complex environments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__content">
+          <h2>Steering Behaviours</h2>
+          <p>
+            To make the AI agents' movements realistic and dynamic, I
+            incorporated steering behaviors. These behaviors, including seek,
+            flee, and wander, enabled the AI agents to interact with their
+            surroundings convincingly. By integrating these behaviors into my
+            project, I added an extra layer of sophistication and realism.
+          </p>
+        </div>
+
+        <div class="main__content__2">
+          <h2>Finite State Machine</h2>
+          <p>
+            Managing the AI agents' decision-making processes was achieved through a well-structured finite state machine. 
+            The FSM architecture allowed me to define distinct states and seamlessly transition between them based on various criteria.
+             This not only enhanced the control and adaptability of the AI agents but also made the project's codebase more modular and maintainable.
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+      <h1>More Projects</h1>
+      <div class="projects__wrapper">
+        <div class="projects__card">
+          <h2>Astar Pathfinding Project</h2>
+          <p>Astar Pathfinding agent using c++</p>
+          <div class="projects__btn"><button>Check Out</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Fnaf Remake</h2>
+          <p>My version of the Fan Favroute game Five Nights At Freddys</p>
+          <div class="projects__btn"><button>Check Out</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Child Hood Days Esacpe Room Game</h2>
+          <p>My first Project working in a team of people</p>
+          <div class="projects__btn"><button>Check Out</button></div>
+        </div>
+        <div class="projects__card">
+          <h2>Portfolio Website</h2>
+          <p>A Project Using HTMl CSS and javaScript</p>
+          <div class="projects__btn"><button>Check Out</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a href="#home" id="navbar__logo">RHYS KOUTTS</a>
+        <a
+          href="https://www.linkedin.com/in/rhys-koutts-b22276274/"
+          id="navbar__logo"
+          target="_blank"
+        >
+          Click For LinkedIn
+        </a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

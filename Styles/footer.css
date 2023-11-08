@@ -1,0 +1,27 @@
+
+/* Footer Section */
+.footer__container {
+  background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.footer__logo {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    margin-left: 20px;
+  }
+}
