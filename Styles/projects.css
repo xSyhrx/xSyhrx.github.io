@@ -22,6 +22,7 @@
   font-size: 2.5rem;
 }
 
+
 .projects__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -88,6 +89,13 @@
   transition: 0.3s ease-in;
   cursor: pointer;
 }
+
+.projects__page .projects__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+}
+
 
 @media screen and (max-width: 1300px) {
   .projects__wrapper {
