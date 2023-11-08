@@ -60,6 +60,66 @@
   font-weight: 700;
 }
 
+.mat {
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000); 
+  background: linear-gradient(to left, #434343, #000000); 
+  padding: 10rem 0;
+}
+
+.mat__container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-row: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.mat__content {
+  color: #fff;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.main__content h1 {
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.mat__content h2 {
+  font-size: 4rem;
+  color: #fff;
+  background: rgb(115,200,169);
+  background: linear-gradient(90deg, #73c8a9 0%, rgba(0,115,98,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+}
+
+.mat__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
 .main__content__2 h1 {
   font-size: 2rem;
   background-color: #f0f0f0;
@@ -166,13 +226,13 @@ background: linear-gradient(to top, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Fir
 }
 
 .me__img {
-  width: 500px;
-  height: 600px;
+  width: 490px;
+  height: 570px;
   border-radius: 100%;
   border-style: solid;
   border-color: #73c8a9;
-  border-width: 10px;
-
+  border-width: 12px;
+  margin-right: 150px;
 }
 
 /* Mobile Responsive */

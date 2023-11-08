@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="Styles/contact.css" />
     <link rel="stylesheet" href="Styles/footer.css" />
     <link rel="stylesheet" href="Styles/github.css" />
+
   </head>
-  <body>
+  <body class="projects2__page">
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo">RHYS KOUTTS</a>
+        <a href="index.html" id="navbar__logo">RHYS KOUTTS</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -30,10 +31,11 @@
           <li class="navbar__item">
             <a href="#about" class="navbar__links" id="about-page">About</a>
           </li>
-          <li class="navbar__item">
-            <a href="#projects" class="navbar__links" id="projects-page"
-              >Projects</a
-            >
+          <li class="navbar__btn">
+            <a href="#github" class="navbar__links" id="github-page">Github</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
           </li>
           <li class="navbar__btn">
             <a href="#contact" class="button" id="contact-page">Contact</a>
@@ -45,47 +47,67 @@
     <!-- Hero Section -->
     <div class="hero" id="home">
       <div class="hero__container">
-        <h1 class="hero__heading">An  Aspiring <span>Software Enginere</span></h1>
-        <button class="main__btn"><a href="#projects">Check out my Work</a></button>
+        <h1 class="hero__heading"><span>C#</span> Custom Built Math Libary</h1>
+        <img class="image__mat" src="Images/Matri.png">
       </div>
     </div>
 
-    <!-- About Section -->
+    <!-- Astar Section -->
     <div class="main" id="about">
       <div class="main__container">
         <div class="main__img--container">
-          <div class="main__img--card1">
-            <img class="me__img" src="Images/Me.png">
+          <div class="main__img--card">
+            <img class="pathfinding__img" src="Images/Vec2example.png">
           </div>
         </div>
         <div class="main__content">
-          <h1>Who Am I?</h1>
-          <h2>I Am Rhys Koutts</h2>
+          <h2>Vectors</h2>
           <p>
-            19 year old undergraduate programer currently studding at AIE Sydney
+            In my library, I've created a fundamental tool called Vec2 for working with 2D vectors.
+             It's a simple and powerful structure that can be used to do things like normalize vectors, 
+             find their lengths, and easily perform operations like addition and subtraction. 
+             It's a versatile and user-friendly tool for anyone dealing with 2D vectors in programming and graphics.
           </p>
-          <button class="main__btn"><a href="#contact">Get In Contact</a></button>
         </div>
       </div>
     </div>
 
+    <div class="mat" id="about">
+      <div class="mat__container">
+        <div class="mat__content">
+          <h2>Matrices</h2>
+          <p>
+            In this math library, I've introduced the Mat3 struct for working with 3x3 matrices. 
+            It simplifies the creation of transformation matrices for tasks like translation, rotation, and scaling. 
+            You can effortlessly construct transformation matrices with the provided static methods, such as CreateTransform, 
+            CreateTranslation, CreateScale, and CreateRotation, making it easy to manipulate 2D graphics and geometric
+            transformations. Additionally, the struct offers accessor properties for extracting and setting translation,
+            scale, and rotation components.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- GitHub Section -->
+      <div class="github__main" id="github">
+        <div class="github__container">
+          <div class="github__content">
+            <img src="Images/GitHub-logo.png" alt="GitHub Code" class="github__image">
+            <h2>Have A Look At The Code Used In This Project</h2>
+            <button class="github__btn"><a href="https://github.com/xSyhrx?tab=repositories">My GitHub</a></button>
+          </div>
+        </div>
+      </div>
+
     <!-- Projects Section -->
     <div class="projects" id="projects">
-      <h1>My Projects</h1>
+      <h1>More Projects</h1>
       <div class="projects__wrapper">
-        <div class="projects__card">
-          <h2>Astar Pathfinding Project</h2>
-          <p>Astar Pathfinding agent using c++</p>
-          <div class="projects__btn"> <a href="project1.html">
-            <button>Check Out</button></div>
-          </a>
-        </div>
         <div class="projects__card">
           <h2>Fnaf Remake</h2>
           <p>My version of the Fan Favroute game Five Nights At Freddys</p>
-          <div class="projects__btn"> <a href="project2.html">
-            <button>Check Out</button></div>
-          </a>
+          <div class="projects__btn"><button>Check Out</button></div>
         </div>
         <div class="projects__card">
           <h2>Child Hood Days Esacpe Room Game</h2>
@@ -100,32 +122,15 @@
       </div>
     </div>
 
-
-    <!-- Features Section -->
-    <div class="main" id="contact">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>My Contacts</h1>
-          <h2>Phone Number</h2>
-          <p> 0431 147 397 </p>
-          <h2>Email</h2>
-          <p>
-            RhysKouttsWork@gmail.com
-          </p>
-          <button class="main__btn"><a href="#contact">Get In Contact</a></button>
-        </div>
-        <div class="main__img--container">
-          <div class="main__img--card" id="card-2">ICON</div>
-      </div>
-      </div>
-    </div>
-
     <!-- Footer Section -->
     <div class="footer__container">
       <div class="footer__logo">
         <a href="#home" id="navbar__logo">RHYS KOUTTS</a>
-        <a href="https://www.linkedin.com/in/rhys-koutts-b22276274/" 
-        id="navbar__logo"  target="_blank">
+        <a
+          href="https://www.linkedin.com/in/rhys-koutts-b22276274/"
+          id="navbar__logo"
+          target="_blank"
+        >
           Click For LinkedIn
         </a>
       </div>
