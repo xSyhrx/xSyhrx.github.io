@@ -25,7 +25,7 @@
 
 .projects__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr  1fr;
   grid-template-rows: 1fr;
 }
 
@@ -41,6 +41,7 @@
   background: rgb(115,200,169);
   background: linear-gradient(90deg, rgba(115,200,169,1) 0%, rgba(0,115,98,1) 100%);
   transition: 0.3s ease-in;
+  align-items: center;
 }
 
 .projects__card:nth-child(2) {
@@ -92,7 +93,19 @@
 
 .projects__page .projects__wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+}
+
+.projects2__page .projects__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+}
+
+.projects3__page .projects__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr;
 }
 
