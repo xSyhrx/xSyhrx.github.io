@@ -1,15 +1,7 @@
 /* Hero Section */
 .hero {
-  background: #000000;
-  background: -webkit-linear-gradient(to left, #434343, #000000); 
-  background: linear-gradient(to left, #434343, #000000); 
-  
+  background: linear-gradient(to left, #000000, #3d0000); /* Black to deep red gradient */
   padding: 200px 0;
-}
-
-.image__mat{
-  width: 900px;
-  height: 600px;
 }
 
 .hero__container {
@@ -24,34 +16,98 @@
   padding: 30px;
 }
 
+/* Heading */
 .hero__heading {
   font-size: 100px;
   margin-bottom: 24px;
-  color: rgb(170, 169, 169);
+  color: #ff4d4d; /* Vibrant red for primary text */
+  text-shadow: 0 0 15px rgba(255, 77, 77, 0.6), 
+               0 0 30px rgba(255, 77, 77, 0.4); /* Subtle glow effect */
 }
 
-.hero__heading span{
-  background: #abbaab; 
-  background: linear-gradient(to right, #ffffff, #abbaab);
-  
+.hero__heading span {
+  background: linear-gradient(to right, #ff9999, #ff4d4d); /* Light red to vibrant red gradient */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .highlight {
-  border-bottom: 5px solid rgb(115,200,169);
+  border-bottom: 5px solid #ff4d4d; /* Bright red underline for highlights */
 }
 
-@media  screen and (max-width: 1100px) {
+/* Hero Description */
+.hero__description {
+  font-size: 24px;
+  color: #d9d9d9; /* Subtle gray for description */
+  max-width: 800px;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); /* Soft shadow for elegance */
+}
+
+/* Image Mat */
+.image__mat {
+  width: 900px;
+  height: 600px;
+  margin-top: 40px;
+  border: 10px solid #ff4d4d; /* Bold red border around the image */
+  box-shadow: 0 0 20px rgba(255, 77, 77, 0.4); /* Glowing border effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image__mat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 77, 77, 0.6); /* Intense glow on hover */
+}
+
+.main__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #ff4d4d, #800000); /* Red gradient */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main__btn:hover {
+  background: linear-gradient(to right, #800000, #ff4d4d); /* Reverse gradient on hover */
+  box-shadow: 0 0 15px #ff4d4d; /* Glow effect */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.main__btn a:hover {
+  color: #000; /* Optional: Change text color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1100px) {
   .hero__heading {
     font-size: 60px;
   }
 
   .hero__description {
-    font-size: 40px;
+    font-size: 18px;
   }
 
+  .image__mat {
+    width: 100%;
+    height: auto;
+    border-width: 5px; /* Adjust border size */
+  }
 }

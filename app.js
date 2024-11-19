@@ -13,10 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menu.addEventListener('click', MobileMenu);
 
-  // Highlight the active menu when scrolling
- 
-
-  // Close mobile menu when clicking on an item
+   // Close mobile menu when clicking on an item
   menuItems.forEach((item) => {
     item.addEventListener('click', () => {
       menuLinks.classList.remove('active');
