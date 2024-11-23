@@ -23,5 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
   navLogo.addEventListener('click', () => {
     menuLinks.classList.remove('active');
   });
-
 });
