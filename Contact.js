@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Initialize EmailJS with your user ID (replace with your actual user ID)
-  emailjs.init('MZCtEAfuaC9otnQMF');  // Replace 'MZCtEAfuaC9otnQMF' with your actual EmailJS User ID
+  emailjs.init({
+    publicKey: 'MZCtEAfuaC9otnQMF',
+  });
 
   const popup = document.getElementById('myPopup');
   const contactBtn = document.getElementById('contact-btn'); // The "Get In Contact" button
