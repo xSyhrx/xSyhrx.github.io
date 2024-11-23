@@ -1,182 +1,89 @@
+/* Navbar Section */
 .navbar {
-  background: #131313;
-  height: 80px;
+  background-color: #1a1a1a;
+  height: 70px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  justify-content: center;
   position: sticky;
   top: 0;
-  z-index: 999;
-  transition: all 0.3s ease;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
 }
 
 .navbar__container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  align-items: center;
   width: 100%;
-  z-index: 1;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 #navbar__logo {
-  background: rgb(115,200,169);
-  background: linear-gradient(90deg, rgba(115,200,169,1) 0%, rgba(0,115,98,1) 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  color: #00aaff;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 .navbar__menu {
   display: flex;
-  align-items: center;
+  gap: 20px;
   list-style: none;
 }
 
-.navbar__item {
-  height: 80px;
-}
-
-.navbar__links {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
+.navbar__item .navbar__links {
+  color: #eaeaea;
   text-decoration: none;
-  height: 100%;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.navbar__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
+.navbar__item .navbar__links:hover {
+  color: #00aaff;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+.navbar__btn .button {
   padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
+  background-color: #00aaff;
+  color: #ffffff;
+  text-decoration: none;
   border-radius: 4px;
-  background: rgb(115,200,169);
-  background: linear-gradient(90deg, rgba(115,200,169,1) 0%, rgba(0,115,98,1) 100%);
-  color: #fff;
-  transition: all 0.3s;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
-.navbar__links:hover {
-  color: rgb(115,200,169);
-  transition: all 0.3s ease;
+.navbar__btn .button:hover {
+  background-color: #0077cc;
 }
 
-@media screen and (max-width: 960px) {
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    padding: 0;
-  }
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0d0d0d;
+}
 
-  .navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index:  -1;
-    }
+.hero__heading {
+  font-size: 2.5rem;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
 
-    .navbar__menu.active {
-      background: #131313;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 60vh;
-      font-size: 1.6rem;
-    }
+.hero__container .main__btn a {
+  font-size: 1rem;
+  background-color: #00aaff;
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 
-    #navbar__logo {
-      padding-left: 25px;
-    }
-
-    .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background: #fff;
-    }
-
-    .navbar__item {
-      width: 100%;
-    }
-
-    .navbar__links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-
-    .navbar__btn {
-      padding-bottom: 2rem;
-    }
-
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-      height: 80px;
-      margin: 0;
-    }
-
-    #mobile-menu {
-      position: absolute;
-      top: 20%;
-      right: 5%;
-      transform: translate(5%, 20%);
-    }
-
-    .navbar__toggle .bar {
-      display: block;
-      cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(35deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-35deg);
-    }
+.hero__container .main__btn a:hover {
+  background-color: #0077cc;
 }

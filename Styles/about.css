@@ -1,210 +1,125 @@
 /* About Section */
 .main {
-  background: #000000;
-  background: linear-gradient(to left, #000000, #3d0000); /* Black to deep red gradient */
-  background: linear-gradient(to left, #000000, #3d0000); /* Black to deep red gradient */
-  padding: 10rem 0;
+  background-color: #0d0d0d; /* Black to dark grey gradient */
+  padding: 8rem 0; /* Reduced padding for a cleaner look */
 }
 
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Add space between columns */
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
-.main__content, .main__content__2 {
-  color: #fff;
-  width: 100%;
-  padding: 0 50px;
+.main__content {
+  color: #eaeaea;
+  text-align: left;
 }
 
-.main__content h1,
-.main__content__2 h1 {
-  font-size: 2.5rem;
+.main__content h1 {
+  font-size: 2.2rem;
   text-transform: uppercase;
-  margin-bottom: 32px;
-  color: #ff4d4d;
+  margin-bottom: 1rem;
+  color: #00aaff;
 }
 
-.main__content h2,
-.main__content__2 h2 {
-  font-size: 4rem;
-  background: linear-gradient(90deg, #ff4d4d, #800000);
+.main__content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #00aaff, #006699); /* Gradient reversed */
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
 }
 
-.main__content p,
-.main__content__2 p {
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #ffffff;
+.main__content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #b0b0b0;
 }
 
-/* Single-column layout for "mat" sections */
-.mat {
-  background: #000000;
-    background: linear-gradient(to left, #000000, #3d0000); /* Black to deep red gradient */
-  background: linear-gradient(to left, #2e2e2e, #000000);
-  padding: 10rem 0;
-}
-
-.mat__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
-}
-
-.mat__content h2 {
-  font-size: 3.5rem;
-    background: linear-gradient(to left, #000000, #3d0000); /* Black to deep red gradient */
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-align: center;
-}
-
-.mat__content p {
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-align: center;
-}
-
-/* Buttons */
+/* Get In Contact Button Style */
 .main__btn {
-  font-size: 1.8rem;
-  background: linear-gradient(90deg, #ff4d4d, #800000);
-  padding: 20px 60px;
+  font-size: 1.2rem; /* Increased font size for better readability */
+  background: linear-gradient(270deg, #00aaff, #004466); /* Gradient reversed */
+  padding: 15px 40px; /* Increased padding for a larger button */
   border: none;
   border-radius: 4px;
   color: #ffffff;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
+  transition: all 0.3s ease;
 }
 
 .main__btn a {
-  position: relative;
-  z-index: 2;
+  text-decoration: none;
   color: #ffffff;
   font-weight: bold;
-  text-decoration: none;
-}
-
-.main__btn::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #800000;
-  transition: all 0.35s;
-  border-radius: 4px;
 }
 
 .main__btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ff4d4d;
+  background: linear-gradient(270deg, #004466, #002233); /* Gradient reversed */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
 }
-
-.main__btn:hover:after {
-  width: 100%;
-}
-
-/* Image Cards */
-.main__img--container {
-  text-align: center;
-}
-
-.main__img--card {
-  margin: 10px;
-  height: 500px;
-  width: 500px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to top, #800000, #ff4d4d);
-  margin-right: 100px;
-}
-
-.projects2__page .main__img--card {
-  height: 500px;
-  width: 520px;
-}
-
-.pathfinding__img, .tank__img {
-  width: 100%;
-  height: 100%;
-}
-
+/* Image Section */
 .me__img {
-  width: 560px;
-  height: 600px;
-  border-radius: 100%;
-  border-style: solid;
-  border-color: #ff4d4d;
-  border-width: 15px;
-  margin-right: 150px;
+  width: 100%;
+  max-width: 400px;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%;
+  border: 4px solid #00aaff;
+  box-shadow: 0 4px 15px rgba(0, 170, 255, 0.2);
+  margin: 0 auto; /* Center the image */
+}
+
+/* LinkedIn Button Style */
+.linkedin-btn {
+  background-color: #0077b5; /* LinkedIn Blue */
+  color: #ffffff;
+  padding: 18px; /* Increased padding for a larger button */
+  border-radius: 50%; /* Circular button */
+  font-size: 3rem; /* Larger font size for the logo */
+  width: 80px; /* Increased size of the button */
+  height: 80px; /* Increased size of the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 15px; /* Space between buttons */
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #005f8c; /* Darker blue on hover */
+}
+
+.linkedin-btn i {
+  font-size: 3rem; /* Larger icon size */
+}
+/* About Section */
+.main {
+  background: linear-gradient(to left, #000000, #1a1a1a);
+  padding: 8rem 0;
+  border: 2px solid #00aaff; /* Blue border */
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
   .main__container {
     grid-template-columns: 1fr;
-    height: auto;
+    text-align: center;
   }
 
   .main__content {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .main__img--card {
-    height: 425px;
-    width: 425px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .main__img--card {
-    width: 250px;
-    height: 250px;
-  }
-
-  .main__content h1, .main__content h2 {
-    font-size: 2rem;
-  }
-
-  .main__content p {
-    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .main__btn {
-    padding: 12px 36px;
+    margin: 1.5rem auto 0;
   }
 }

@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="Styles/contact.css" />
     <link rel="stylesheet" href="Styles/footer.css" />
     <link rel="stylesheet" href="Styles/github.css" />
+    <link rel="stylesheet" href="Styles/Contact.css" />
   </head>
+
+  <!-- Font Awesome CDN for LinkedIn Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="Contact.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
@@ -46,56 +53,73 @@
     <div class="hero" id="home">
       <div class="hero__container">
         <h1 class="hero__heading"> <span>Software Engineer / Games Programmer</span></h1>
-        <button class="main__btn"><a href="#projects">Check out my Work</a></button>
+        <button class="home_main__btn"><a href="#projects">Check out my Work</a></button>
       </div>
     </div>
 
-    <!-- About Section -->
-    <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card1">
-            <img class="me__img" src="Images/profilePicture.png">
-          </div>
-        </div>
-        <div class="main__content">
-          <h1>Who Am I?</h1>
-          <h2>Rhys Koutts</h2>
-          <p>
-            20 year old undergraduate Software Enginere currently studding at AIE Sydney
-          </p>
-          <button class="main__btn"><a href="#contact">Get In Contact</a></button>
-        </div>
+<!-- About Section -->
+<div class="main" id="about">
+  <div class="main__container">
+    <div class="main__img--container">
+      <div class="main__img--card1">
+        <img class="me__img" src="Images/profilePicture.png" alt="Rhys Koutts">
       </div>
     </div>
+    <div class="main__content">
+      <h1>Who Am I?</h1>
+      <h2>Rhys Koutts</h2>
+      <p>
+        20 year old undergraduate Software Engineer currently studying at AIE Sydney
+      </p>
+      <!-- 'Get In Contact' button now triggers the popup -->
+      <button class="main__btn" id="contact-btn">Get In Contact</button>
+
+      <!-- LinkedIn Button with Logo -->
+      <a href="https://www.linkedin.com/in/yourname" target="_blank">
+        <button class="linkedin-btn">
+          <i class="fab fa-linkedin"></i> <!-- LinkedIn Logo -->
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
 
     <!-- Projects Section -->
 <section class="projects" id="projects">
   <h1>My Projects</h1>
   <div class="projects__grid">
     <a href="project1.html" class="projects__card">
-      <img src="Images/AiScreeenshot.png" alt="Astar Pathfinding Project" />
+      <div class="projects__img">
+        <img src="Images/AiScreeenshot.png" alt="Astar Pathfinding Project" />
+      </div>
       <div class="projects__content">
         <h2>Astar Pathfinding Project</h2>
         <p>Astar Pathfinding agent using C++</p>
       </div>
     </a>
     <a href="project2.html" class="projects__card">
-      <img src="Images/project2.jpg" alt="C# Custom Math Library" />
+      <div class="projects__img">
+        <img src="Images/AiScreeenshot.png" alt="C# Custom Math Library" />
+      </div>
       <div class="projects__content">
         <h2>C# Custom Math Library</h2>
         <p>Vectors and matrices built within my custom library</p>
       </div>
     </a>
     <a href="project3.html" class="projects__card">
-      <img src="Images/project3.jpg" alt="Portfolio Website" />
+      <div class="projects__img">
+        <img src="Images/AiScreeenshot.png" alt="Portfolio Website" />
+      </div>
       <div class="projects__content">
         <h2>Portfolio Website</h2>
         <p>A project using HTML, CSS, and JavaScript</p>
       </div>
     </a>
     <a href="project4.html" class="projects__card">
-      <img src="Images/project4.jpg" alt="Fourth Project" />
+      <div class="projects__img">
+        <img src="Images/AiScreeenshot.png" alt="Fourth Project" />
+      </div>
       <div class="projects__content">
         <h2>Fourth Project</h2>
         <p>A brief description of your fourth project</p>
@@ -105,29 +129,19 @@
 </section>
 
 
-    <!-- Features Section -->
-    <div class="main" id="contact">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Get In Contact</h1>
-          <h2>Email</h2>
-          <p>
-            RhysKouttsWork@gmail.com
-          </p>
-        </div>
-      </div>
-    </div>
+<!-- The Popup -->
+<div id="myPopup" class="popup">
+  <div class="popup-content">
+    <span class="popup-close-btn" id="close-btn">&times;</span>
+    <h2>Get In Touch!</h2>
+    <p>Feel free to send me an email using the form below.</p>
+    <form id="contact-form">
+      <input type="email" id="email" name="email" placeholder="Your email" required><br>
+      <textarea id="message" name="message" placeholder="Your message" required></textarea><br>
+      <button type="submit">Send Email</button>
+    </form>
+  </div>
+</div>
 
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__logo">
-        <a href="#home" id="navbar__logo">RHYS KOUTTS</a>
-        <a href="https://www.linkedin.com/in/rhys-koutts-b22276274/" 
-        id="navbar__logo"  target="_blank">
-          Click For LinkedIn
-        </a>
-      </div>
-    </div>
-    <script src="app.js"></script>
-  </body>
+
 </html>
