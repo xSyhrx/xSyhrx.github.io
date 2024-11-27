@@ -1,40 +1,15 @@
-/* Contact Section */
-#contact {
-  padding: 60px 20px;
-  background-color: #0d0d0d;
+/* Default Footer Styles */
+footer {
+  background-color: #333; /* Default footer color */
+  color: #e0e0e0;
   text-align: center;
-}
-
-#contact h1 {
-  font-size: 2rem;
-  color: #00aaff;
-}
-
-#contact p {
+  padding: 20px;
   font-size: 1rem;
-  color: #cccccc;
-  margin: 20px 0;
 }
 
-/* Footer Section */
-.footer__container {
-  background-color: #0d0d0d;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #333;
+/* Purple Themed Footer for Project Page */
+.project-page footer {
+  background-color: #9b4d9600; /* Purple background */
+  color: #da54ce; /* White text */
 }
 
-.footer__logo {
-  font-size: 1rem;
-  color: #00aaff;
-  text-decoration: none;
-}
-
-.footer__logo a {
-  color: #00aaff;
-  text-decoration: none;
-}
-
-.footer__logo a:hover {
-  text-decoration: underline;
-}

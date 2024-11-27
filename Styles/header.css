@@ -1,4 +1,4 @@
-/* Navbar Section */
+/* Default Navbar Section (for other pages) */
 .navbar {
   background-color: #1a1a1a;
   height: 70px;
@@ -86,4 +86,70 @@
 
 .hero__container .main__btn a:hover {
   background-color: #0077cc;
+}
+
+/* Project Page Navbar Section (Purple Theme) */
+body.project-page .navbar {
+  background-color: #252127; /* Purple background */
+}
+
+body.project-page .navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+body.project-page #navbar__logo {
+  color: #ffffff; /* White logo text */
+}
+
+body.project-page .navbar__menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+body.project-page .navbar__item .navbar__links {
+  color: #f1f1f1; /* Light gray text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+body.project-page .navbar__item .navbar__links:hover {
+  color: #d500f9; /* Light purple hover color */
+}
+
+body.project-page .navbar__btn .button {
+  padding: 10px 20px;
+  background-color: #d500f9; /* Purple background for button */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+body.project-page .navbar__btn .button:hover {
+  background-color: #ab00b9; /* Darker purple on hover */
+}
+
+/* Project Page Hero Section (Purple Theme) */
+body.project-page .hero {
+  background-color: #2e0077; /* Dark purple background */
+}
+
+body.project-page .hero__heading {
+  color: #d500f9; /* Light purple text */
+}
+
+body.project-page .hero__container .main__btn a {
+  background-color: #d500f9; /* Purple button */
+}
+
+body.project-page .hero__container .main__btn a:hover {
+  background-color: #ab00b9; /* Darker purple on hover */
 }

@@ -3,18 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>OpenGL Rendering Engine</title>
     <link rel="stylesheet" href="Styles/styles.css" />
     <link rel="stylesheet" href="Styles/header.css" />
-    <link rel="stylesheet" href="Styles/home.css" />
-    <link rel="stylesheet" href="Styles/about.css" />
-    <link rel="stylesheet" href="Styles/projects.css" />
-    <link rel="stylesheet" href="Styles/contact.css" />
-    <link rel="stylesheet" href="Styles/footer.css" />
-    <link rel="stylesheet" href="Styles/github.css" />
-
+    <link rel="stylesheet" href="Styles/ProjectTwo.css" />
   </head>
-  <body class="projects2__page">
+  <body class="project-details-page project-page">
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -25,135 +19,98 @@
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#about" class="navbar__links" id="about-page">About</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="#github" class="navbar__links" id="github-page">Github</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="index.html" class="button" id="contact-page">Contact</a>
-          </li>
+          <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+          <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+          <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+          <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 class="hero__heading"><span>C#</span> Custom Built Math Libary</h1>
-        <img class="image__mat" src="Images/Matri.png">
+    <!-- Project Title Section -->
+    <header class="project-header">
+      <div class="project-header__content">
+        <h1>OpenGL Rendering Engine</h1>
+        <p>
+          In this project, I built an OpenGL rendering engine to demonstrate key 3D graphics techniques. The engine features 
+          realistic global and point lighting, mesh rendering with textures, cubemaps for environments and reflections, and matrix 
+          transformations for scaling, rotation, and positioning. Each section below showcases the specific techniques I used to 
+          implement these features in my engine.
+        </p>
+        <video src="Videos/GraphicsVid.mp4" autoplay loop muted class="project-header__video"></video>
       </div>
-    </div>
+    </header>
 
-    <!-- Astar Section -->
-    <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card">
-            <img class="pathfinding__img" src="Images/Vec2example.png">
-          </div>
-        </div>
-        <div class="main__content">
-          <h2>Vectors</h2>
-          <p>
-            In my library, I've created a fundamental tool called Vec2 for working with 2D vectors.
-             It's a simple and powerful structure that can be used to do things like normalize vectors, 
-             find their lengths, and easily perform operations like addition and subtraction. 
-             It's a versatile and user-friendly tool for anyone dealing with 2D vectors in programming and graphics.
-          </p>
-        </div>
+    <!-- Global and Point Lighting Section -->
+    <section class="project-section">
+      <div class="project-media">
+        <video src="Videos/LightingVid.mp4" autoplay loop muted class="project-media__video"></video>
       </div>
-    </div>
-
-    <div class="mat" id="about">
-      <div class="mat__container">
-        <div class="mat__content">
-          <h2>Matrices</h2>
-          <p>
-            In this math library, I've introduced the Mat3 struct for working with 3x3 matrices. 
-            It simplifies the creation of transformation matrices for tasks like translation, rotation, and scaling. 
-            You can effortlessly construct transformation matrices with the provided static methods, such as CreateTransform, 
-            CreateTranslation, CreateScale, and CreateRotation, making it easy to manipulate 2D graphics and geometric
-            transformations. Additionally, the struct offers accessor properties for extracting and setting translation,
-            scale, and rotation components.
-          </p>
-        </div>
+      <div class="project-description">
+        <h2>Global and Point Lighting</h2>
+        <p>
+          To implement global and point lighting, I utilized OpenGL's lighting system. For global lighting, I set up an ambient 
+          light that affects the entire scene, providing a base level of illumination. For point lighting, I created a light source 
+          that behaves like a real-world light bulb, emitting light in all directions from a specific position. I applied attenuation 
+          to simulate how light diminishes with distance, which helped create realistic shadows and highlights in the scene.
+        </p>
       </div>
+    </section>
 
-    </div>
 
-     <!-- Tank Game Section -->
-     <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card">
-            <img class="tank__img" src="Images/tankGame.PNG">
-          </div>
-        </div>
-        <div class="main__content">
-          <h2>Tank Game Made Using The Libary</h2>
-          <p>
-            Using this I put together a multiplayer tank game, 
-            infusing it with some of the elements i made within the library. 
-            Tanks move across a 2D vector terrain, and their turrets swivel thanks to the 3x3 matrix. i was also able to make a crisp green color with the use of
-            bit-shifting. My library also included a collision detection class that keeps the action smooth and real.
-          </p>
-        </div>
+
+    <!-- Cubemaps Section -->
+    <section class="project-section">
+      <div class="project-media">
+        <video src="Videos/Cubemap.mp4" autoplay loop muted class="project-media__video"></video>
       </div>
-    </div>
-
-      <!-- GitHub Section -->
-      <div class="github__main" id="github">
-        <div class="github__container">
-          <div class="github__content">
-            <img src="Images/GitHub-logo.png" alt="GitHub Code" class="github__image">
-            <h2>Have A Look At The Code Used In This Project</h2>
-            <button class="github__btn"><a href="https://github.com/xSyhrx/MathLibrary">My GitHub</a></button>
-          </div>
-        </div>
+      <div class="project-description">
+        <h2>Cubemaps</h2>
+        <p>
+          Implementing cubemaps involved using a set of six textures to represent the faces of a cube. I loaded these textures 
+          as cube maps and applied them to simulate environments like skies or reflections. I also learned how to correctly map 
+          the camera's view onto the cube to simulate realistic environmental effects, such as skyboxes and reflective surfaces 
+          on objects. The process included setting up shaders to sample from the cubemap, allowing me to create dynamic, 
+          immersive environments in my 3D scene.
+        </p>
       </div>
+    </section>
 
-    <!-- Projects Section -->
-    <div class="projects" id="projects">
-      <h1>More Projects</h1>
-      <div class="projects__wrapper">
-        <div class="projects__card">
-          <h2>Astar Pathfinding Project</h2>
-          <p>Astar Pathfinding agent using c++</p>
-          <div class="projects__btn"> <a href="project1.html">
-            <button>Check Out</button></div>
-          </a>
-        </div>
-        <div class="projects__card">
-          <h2>Portfolio Website</h2>
-          <p>A Project Using HTMl CSS and javaScript</p>
-          <div class="projects__btn"> <a href="project3.html">
-            <button>Check Out</button></div>
-          </a>
-        </div>
+    <!-- Matrices: Scaling, Rotation, and Position Section -->
+    <section class="project-section">
+      <div class="project-media">
+        <video src="Videos/Transform.mp4" autoplay loop muted class="project-media__video"></video>
       </div>
-    </div>
+      <div class="project-description">
+        <h2>Matrix Transformations: Scaling, Rotation, and Position</h2>
+        <p>
+          Matrix transformations are crucial for controlling the position, orientation, and size of objects in 3D space. I used 
+          transformation matrices to apply scaling, rotation, and translation to 3D models. By multiplying these matrices together, 
+          I was able to efficiently move, rotate, and scale objects in my scene. This system made it easier to manipulate objects 
+          in real time and ensured that all transformations were applied in a consistent manner across different objects and scenes.
+        </p>
+      </div>
+    </section>
 
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__logo">
-        <a href="#home" id="navbar__logo">RHYS KOUTTS</a>
-        <a
-          href="https://www.linkedin.com/in/rhys-koutts-b22276274/"
-          id="navbar__logo"
-          target="_blank"
-        >
-          Click For LinkedIn
-        </a>
-      </div>
-    </div>
+    <!-- Particle System Section -->
+<section class="project-section">
+  <div class="project-media">
+    <video src="Videos/ParticleSystem.mp4" autoplay loop muted class="project-media__video"></video>
+  </div>
+  <div class="project-description">
+    <h2>Particle System: Billboarded Planes</h2>
+    <p>
+      I implemented a simple yet efficient particle system using billboarded planes. Each particle is represented 
+      as a 2D plane that always faces the camera, creating the illusion of 3D particles like fire, smoke, and sparks. I used OpenGL 
+      to generate and animate these planes, applying basic transformations like position, velocity, and scale. The planes are rendered 
+      with transparent textures, which allows for the creation of realistic effects such as soft particle edges and fading over time. 
+      This method is computationally efficient and allowed me to simulate complex particle systems while maintaining high performance 
+      in real-time rendering.
+    </p>
+  </div>
+</section>
+
+
     <script src="app.js"></script>
   </body>
 </html>

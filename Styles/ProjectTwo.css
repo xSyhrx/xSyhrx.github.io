@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c; /* Dark background */
+  color: #e0e0e0; /* Light gray text for contrast */
+  line-height: 1.6;
+}
+
+/* Navbar Section */
+.navbar {
+  width: 100%;
+  background: #2c2c2c; /* Darker navbar background */
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #9b4d96; /* Dark Purple Border */
+}
+
+.navbar__container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: #9b4d96; /* Dark Purple Logo */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__item {
+  list-style: none;
+}
+
+.navbar__links {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: #9b4d96; /* Dark Purple on hover */
+}
+
+/* Project Header */
+.project-header {
+  text-align: center;
+  background: #2c2c2c;
+  padding: 80px 20px 40px;
+  border-bottom: 2px solid #9b4d96; /* Dark Purple Border */
+}
+
+.project-header__content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-header h1 {
+  color: #9b4d96; /* Dark Purple */
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(155, 77, 150, 0.5);
+}
+
+.project-header__description {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-video-wrapper {
+  margin-top: 30px;
+}
+
+.project-header__video {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 3px solid #9b4d96; /* Dark Purple Border */
+}
+
+/* Project Section */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 40px 20px;
+  align-items: center;
+  background: #2c2c2c;
+  border-bottom: 2px solid #9b4d96; /* Dark Purple Border */
+}
+
+.project-media {
+  flex: 1;
+}
+
+.project-media__video,
+.project-media__gif {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 3px solid #9b4d96; /* Dark Purple Border */
+}
+
+.project-description {
+  flex: 1;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.project-description h2 {
+  color: #9b4d96; /* Dark Purple */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px rgba(155, 77, 150, 0.5);
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-media, .project-description {
+    width: 100%;
+  }
+
+  .project-header h1 {
+    font-size: 2rem;
+  }
+}

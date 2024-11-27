@@ -6,10 +6,10 @@
     <title>Ghostography</title>
     <link rel="stylesheet" href="Styles/styles.css" />
     <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
     <link rel="stylesheet" href="Styles/ProjectOne.css" />
-
   </head>
-  <body class="project-details-page">
+  <body class="project-details-page project-page">
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -24,43 +24,41 @@
           <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
           <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
           <li class="navbar__item"><a href="contact.html" class="navbar__links">Contact</a></li>
-          <li class="navbar__item"><a href="https://github.com/xSyhrx" class="navbar__links">GitHub</a></li>
         </ul>
       </div>
     </nav>
 
-<!-- Project Title Section -->
-<header class="project-header">
-  <div class="project-header__content">
-    <h1>Ghostography</h1>
-    <p>
-      Ghostography is a spooky atmospheric puzzle game. 
-      Play as a photographer that has won a trip to a haunted mansion and been gifted 
-      an old analog camera. Capture pictures of ghosts with your camera and complete 
-      tasks to escape the mansion.
-    </p>
-    <video src="Videos/GhostographyTrailer.mp4" 
-           autoplay loop muted
-           class="project-header__video"></video>
-  </div>
-</header>
+    <!-- Project Title Section -->
+    <header class="project-header">
+      <div class="project-header__content">
+        <h1>Ghostography</h1>
+        <p class="project-header__description">
+          Ghostography is a spooky atmospheric puzzle game. Play as a photographer that has won a trip to a haunted mansion and been gifted an old analog camera. Capture pictures of ghosts with your camera and complete tasks to escape the mansion.
+        </p>
+        <div class="project-video-wrapper">
+          <video src="Videos/GhostographyTrailer.mp4" autoplay loop muted class="project-header__video"></video>
+        </div>
+      </div>
+    </header>
 
-<!-- Mechanic Section -->
-<section class="project-section">
-  <div class="project-media">
-    <video src="Videos/ghost-camera-mechanic.mp4" 
-           autoplay loop muted 
-           class="project-media__video"></video>
-  </div>
-  <div class="project-description">
-    <h2>Ghost Camera Mechanic</h2>
-    <p>
-      At the heart of my project is the innovative Ghost Camera mechanic. Using this mechanic, players can capture 
-      hidden entities visible only through the lens of an old analog camera. The camera reveals ghosts, hidden 
-      messages, and clues critical to solving puzzles and progressing through the game.
-    </p>
-  </div>
-</section>
+    <!-- Mechanic Section -->
+    <section class="project-section">
+      <div class="project-media">
+        <video src="Videos/ghost-camera-mechanic.mp4" autoplay loop muted class="project-media__video"></video>
+      </div>
+      <div class="project-description">
+        <h2>Ghost Camera Mechanic</h2>
+        <p>
+          At the heart of my project is the innovative Ghost Camera mechanic. Players take on the role of a photographer who, armed with an old analog camera, explores a haunted mansion. The unique feature of this mechanic is the camera’s ability to reveal hidden entities—ghosts—through its lens, which are otherwise invisible to the naked eye. This is achieved using advanced rendering techniques and custom graphic buffers in Unreal Engine.
+        </p>
+        <p>
+          When the player uses the camera, the ghosts are rendered onto a separate graphic buffer, isolating them from the rest of the world. This allows me to apply post-processing effects exclusively to the ghost. The transparency effect applied to the ghost subtly blends it back into the world, creating a translucent, ethereal look as it hovers over the environment. The result is an eerie, atmospheric visual effect that immerses the player in the haunting atmosphere of the mansion.
+        </p>
+        <p>
+          This mechanic opens up exciting gameplay possibilities, as the player must use their camera to uncover hidden clues, solve puzzles, and track down ghosts in order to progress through the game. The blending of the ghost’s visibility with its surroundings creates a dynamic and engaging mechanic that enhances both the gameplay experience and the storytelling.
+        </p>
+      </div>
+    </section>
 
     <!-- Steering Behaviors Section -->
     <section class="project-section">
@@ -68,11 +66,9 @@
         <video src="Videos/steering-demo.mp4" autoplay loop muted class="project-media__video"></video>
       </div>
       <div class="project-description">
-        <h2>Storing Ghosts On Seprate Graphic Buffers</h2>
+        <h2>Storing Ghosts On Separate Graphic Buffers</h2>
         <p>
-          To make the AI agents' movements realistic and dynamic, I incorporated steering behaviors. These behaviors, 
-          including seek, flee, and wander, enabled the AI agents to interact with their surroundings convincingly. 
-          By integrating these behaviors into my project, I added an extra layer of sophistication and realism.
+          To make the AI agents' movements realistic and dynamic, I incorporated steering behaviors. These behaviors, including seek, flee, and wander, enabled the AI agents to interact with their surroundings convincingly. By integrating these behaviors into my project, I added an extra layer of sophistication and realism.
         </p>
       </div>
     </section>
@@ -83,15 +79,19 @@
         <img src="Images/fsm-demo.gif" alt="Finite State Machine Demonstration" class="project-media__gif" />
       </div>
       <div class="project-description">
-        <h2>Blendeing multiple captures to make one</h2>
+        <h2>Blending Multiple Captures to Make One</h2>
         <p>
-          Managing the AI agents' decision-making processes was achieved through a well-structured finite state machine. 
-          The FSM architecture allowed me to define distinct states and seamlessly transition between them based on various criteria. 
-          This enhanced the control and adaptability of the AI agents while making the project's codebase more modular and maintainable.
+          Managing the AI agents' decision-making processes was achieved through a well-structured finite state machine. The FSM architecture allowed me to define distinct states and seamlessly transition between them based on various criteria. This enhanced the control and adaptability of the AI agents while making the project's codebase more modular and maintainable.
         </p>
       </div>
     </section>
 
     <script src="app.js"></script>
+
+
+    <footer class="project-footer">
+      <p>&copy; 2024 Rhys Koutts. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>

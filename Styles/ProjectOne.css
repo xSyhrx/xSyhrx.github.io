@@ -7,39 +7,22 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #0d0d0d; /* Dark background */
-  color: #ffffff; /* White text for contrast */
-}
-
-.project-header__video {
-  max-width: 100%;
-  border: 2px solid #00aaff; /* Matches the border style of the previous image */
-  border-radius: 8px; /* Optional: adds rounded corners */
-  display: block;
-  margin: 20px auto 0;
-}
-
-.project-media__video {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid #00aaff; /* Matches the aesthetic theme */
-  border-radius: 8px; /* Optional: rounded corners */
-  display: block;
-  margin: 0 auto; /* Center the video */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+  background-color: #1c1c1c; /* Dark background */
+  color: #e0e0e0; /* Light gray text for contrast */
+  line-height: 1.6;
 }
 
 /* Navbar Section */
 .navbar {
   width: 100%;
-  background: #0d0d0d;
+  background: #2c2c2c; /* Darker navbar background */
   display: flex;
   justify-content: center;
   padding: 1rem 0;
   position: fixed;
   top: 0;
   z-index: 10;
-  border-bottom: 2px solid #00aaff; /* Blue bottom border */
+  border-bottom: 2px solid #9b4d96; /* Dark Purple Border */
 }
 
 .navbar__container {
@@ -51,7 +34,7 @@ body {
 }
 
 .navbar__logo {
-  color: #00aaff;
+  color: #9b4d96;
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -67,41 +50,53 @@ body {
 }
 
 .navbar__links {
-  color: #ffffff;
+  color: #e0e0e0;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #00aaff;
+  color: #9b4d96; /* Dark Purple on hover */
 }
 
 /* Project Header */
 .project-header {
   text-align: center;
-  background: #0d0d0d;
-  padding: 100px 20px 40px;
-  border-bottom: 2px solid #00aaff;
+  background: #2c2c2c;
+  padding: 80px 20px 40px;
+  border-bottom: 2px solid #9b4d96; /* Dark Purple Border */
 }
 
 .project-header__content {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
 .project-header h1 {
-  color: #00aaff;
+  color: #9b4d96; /* Dark Purple */
   font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(155, 77, 150, 0.5);
 }
 
-.project-header__image {
+.project-header__description {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-video-wrapper {
+  margin-top: 30px;
+}
+
+.project-header__video {
   max-width: 100%;
-  border: 2px solid #00aaff;
   border-radius: 8px;
-  margin-top: 20px;
+  border: 3px solid #9b4d96; /* Dark Purple Border */
 }
 
 /* Project Section */
@@ -111,65 +106,56 @@ body {
   gap: 2rem;
   padding: 40px 20px;
   align-items: center;
-  background: #121212;
-  border-bottom: 2px solid #00aaff;
-}
-
-.project-section:nth-child(odd) {
-  background: #101010;
+  background: #2c2c2c;
+  border-bottom: 2px solid #9b4d96;
 }
 
 .project-media {
   flex: 1;
-  text-align: center;
 }
 
-.project-media__gif,
-.project-media__video {
+.project-media__video,
+.project-media__gif {
   max-width: 100%;
-  border: 2px solid #00aaff;
   border-radius: 8px;
+  border: 3px solid #9b4d96; /* Dark Purple Border */
 }
 
 .project-description {
   flex: 1;
-  color: #e0e0e0;
+  color: #ddd;
   line-height: 1.8;
 }
 
 .project-description h2 {
-  color: #00aaff;
+  color: #9b4d96;
   font-size: 2rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+  text-shadow: 0 0 5px rgba(155, 77, 150, 0.5);
 }
 
-/* Buttons */
-.project-description a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background: linear-gradient(90deg, #004466, #00aaff);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.project-description p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
 }
 
-.project-description a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Footer */
-footer {
-  background: #0d0d0d;
-  text-align: center;
-  padding: 20px;
-  border-top: 2px solid #00aaff;
-}
+  .project-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
-footer p {
-  color: #ffffff;
-  font-size: 0.9rem;
+  .project-media, .project-description {
+    width: 100%;
+  }
+
+  .project-header h1 {
+    font-size: 2rem;
+  }
 }
